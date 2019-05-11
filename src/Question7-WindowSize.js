@@ -1,5 +1,5 @@
 /*
- * ============= Question 6 =============
+ * ============= Question 7 =============
  *
  * The WindowSize component has a memory leak in it.
  *

@@ -1,5 +1,5 @@
 /*
- * ============= Question 7 =============
+ * ============= Question 6 =============
  *
  * Complete the ImageGallery component so that it fetches an image URL from:
  * https://auspicious-baritone.glitch.me/gorilla.

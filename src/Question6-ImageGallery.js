@@ -14,16 +14,32 @@ class ImageGallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgSrc: null
+      imgSrc: null,
+      isLoading: true
     };
   }
 
+  componentDidMount() {
+    this.fetchData();
+  }
+
   fetchData = () => {
-    fetch().then(res => res.json());
+    fetch("https://auspicious-baritone.glitch.me/gorilla")
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          isLoading: false,
+          imgSrc: data
+        });
+      });
   };
 
   render() {
-    return <img src={this.state.imgSrc} alt="An animal" />;
+    if (this.state.isLoading) {
+      return <span>Loading...</span>;
+    } else {
+      return <img src={this.state.imgSrc} alt="An animal" />;
+    }
   }
 }
 

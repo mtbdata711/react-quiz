@@ -11,12 +11,9 @@
 import React, { Component } from "react";
 
 class ImageGallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      imgSrc: null
-    };
-  }
+  state = {
+    imgSrc: null
+  };
 
   fetchData = () => {
     fetch().then(res => res.json());

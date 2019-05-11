@@ -17,12 +17,9 @@
 import React, { Component } from "react";
 
 export class WindowSize extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      windowWidth: window.innerWidth
-    };
-  }
+  state = {
+    windowWidth: window.innerWidth
+  };
 
   componentDidMount() {
     window.addEventListener("resize", this.handleWindowResize);

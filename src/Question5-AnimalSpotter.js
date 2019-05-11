@@ -19,7 +19,7 @@ class AnimalSpotter extends Component {
   render() {
     return (
       <div className="animal-spotter">
-        <p>Number of animals spotted: {this.state.animalSpotted}</p>
+        <p>Number of animals spotted: {this.state.animalsSpotted}</p>
         <CounterButton handleClick={this.spotAnimal} />
       </div>
     );

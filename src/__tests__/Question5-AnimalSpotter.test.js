@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 
 import AnimalSpotter from "../Question5-AnimalSpotter";
 
-describe.skip("Question 5 - AnimalSpotter", () => {
+describe("Question 5 - AnimalSpotter", () => {
   it("shows an initial count", () => {
     const component = mount(<AnimalSpotter />);
     expect(component.find(".animal-spotter p").text()).toBe(

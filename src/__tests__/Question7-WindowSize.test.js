@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 
 import WindowSize from "../Question7-WindowSize";
 
-describe.skip("Question 7 - WindowSize", () => {
+describe("Question 7 - WindowSize", () => {
   beforeEach(() => {
     window.removeEventListener = jest.fn();
   });

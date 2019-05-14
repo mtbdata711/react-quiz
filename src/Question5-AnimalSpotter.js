@@ -11,7 +11,17 @@
 import React, { Component } from "react";
 
 class AnimalSpotter extends Component {
-  state = {};
+  state = {
+    animalsSpotted: 0
+  };
+
+spotAnimal = () => {
+    this.setState(previousState => {
+      return {
+        animalsSpotted: previousState.animalsSpotted + 1
+      };
+    });
+  };
 
   render() {
     return (
@@ -25,10 +35,11 @@ class AnimalSpotter extends Component {
 
 function CounterButton(props) {
   return (
-    <button style={{ background: "lightseagreen", color: "white" }} onClick>
+    <button style={{ background: "lightseagreen", color: "white"}} onClick={props.handleClick}>
       I spotted an animal!
     </button>
   );
 }
+
 
 export default AnimalSpotter;

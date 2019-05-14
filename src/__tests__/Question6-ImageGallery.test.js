@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 
 import ImageGallery from "../Question6-ImageGallery";
 
-describe.skip("Question 6 - ImageGallery", () => {
+describe("Question 6 - ImageGallery", () => {
   let deferred;
 
   beforeEach(() => {

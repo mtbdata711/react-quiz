@@ -3,7 +3,7 @@ import { mount } from "enzyme";
 
 import MonkeysExhibit from "../Question4-MonkeysExhibit";
 
-describe.skip("Question 4 - MonkeysExhibit", () => {
+describe("Question 4 - MonkeysExhibit", () => {
   it("continues to render", () => {
     const component = mount(
       <MonkeysExhibit
